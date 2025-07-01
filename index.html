@@ -1,106 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
-    <link rel="stylesheet" href="style.css">
-    <style type="text/css">
-        * {
-            text-decoration: none;
-            font-family: Calibri;
-            padding: 0;
-            margin: 0;
-        }
-        body {
-            background-color: #1a1a1a;
-        }
-        nav {
-            background-color: #333;
-            padding: 15px 30px;
-        }
-        .navdiv {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .logo a {
-            font-size: 35px;
-            font-weight: 600;
-            color: white;
-        }
-        ul {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navitem{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-            margin-right: 300px;
-            margin-top: 4px;
-        }
-        ul li {
-            margin-right: 20px;
-        }
-        ul li a {
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        ul li button {
-            background-color: black;
-            border: none;
-            border-radius: 10px;
-            padding: 10px;
-            width: 90px;
-        }
-        ul li button a {
-            color: white;
-            font-weight: bold;
-            font-size: 15px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+    * {
+      text-decoration: none;
+      font-family: Calibri;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: #1a1a1a;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 15px 30px;
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo a {
+      font-size: 35px;
+      font-weight: 600;
+      color: white;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navitem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-right: 300px;
+      margin-top: 4px;
+    }
+
+    ul li {
+      margin-right: 20px;
+    }
+
+    ul li a {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    ul li button {
+      background-color: black;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      width: 90px;
+    }
+
+    ul li button a {
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo"><a href="#">EmployoPlacify</a></div>
-            <ul>
-                <div class="navitem">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </div>
-                <li><button><a href="#">Login</a></button></li>
-                <li><button><a href="#">SignUp</a></button></li>
-            </ul>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#">EmployoPlacify</a></div>
+      <ul>
+        <div class="navitem">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </div>
-    </nav>
-
-    <div class="content-items">
-        <div class="text-over-image">Welcome to EmployoPlacify</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for jobs..." />
-            <button>Search</button>
-        </div>
-        <img src="./EPP.jpg" alt="Banner Image"/>
-      </div>
-
-    <div class="section-divider"></div>
-    <div class="section-divider"></div>
-
-    <!-- White Section Start -->
-    <div class="white-section">
-        <!-- Yahan tumhara baaki ka page content aayega (optional) -->
+        <li><button><a href="#">Login</a></button></li>
+        <li><button><a href="#">SignUp</a></button></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Removed image row section here -->
+  <div class="content-items">
+    <div class="text-over-image">Welcome to EmployoPlacify</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for jobs..." />
+      <button>Search</button>
+    </div>
+    <img src="./EPP.jpg" alt="Banner Image" />
+  </div>
 
-    <p style="text-align: center; color: black; margin-top: 10px;">Find Your Dream Job</p>
+  <div class="section-divider"></div>
+  <div class="section-divider"></div>
+
+  <!-- White Section Start -->
+  <div class="white-section">
+    <!-- Yahan tumhara baaki ka page content aayega (optional) -->
+  </div>
+
+  <!-- Removed image row section here -->
+
+  <p style="text-align: center; color: black; margin-top: 10px;">Find Your Dream Job</p>
+
+ <section class="key-facts">
+  <h2>Our Key Facts</h2>
+  <div class="facts-container">
+    <div class="fact-item">
+      <div class="icon-circle">
+        <img src="EPP.jpg" alt="Customers">
+      </div>
+      <p class="number">3,000+</p>
+      <p class="label">Customers</p>
+    </div>
+    <div class="fact-item">
+      <div class="icon-circle">
+        <img src="location-icon.png" alt="Locations">
+      </div>
+      <p class="number">30+</p>
+      <p class="label">Serviceable Pan India locations</p>
+    </div>
+    <div class="fact-item">
+      <div class="icon-circle">
+        <img src="employee-icon.png" alt="Employees">
+      </div>
+      <p class="number">450+</p>
+      <p class="label">Dedicated Employees</p>
+    </div>
+  </div>
+</section>
+
 </body>
+
 </html>
