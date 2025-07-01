@@ -166,3 +166,231 @@ body {
   color: #555;
   text-align: center;
 }
+.popular-categories {
+  font-family: Arial, sans-serif;
+  padding: 30px 20px;
+  background-color: #fff;
+  max-width: 100%;
+  margin: auto;
+}
+
+.popular-categories h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.category {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category:hover {
+  background-color: #f2f2f2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.job-vacancies {
+  padding: 30px 20px;
+  background-color: #fff;
+  max-width: 1000px;
+  
+}
+
+.job-vacancies .title {
+  font-size: 14px;
+  color: #111;
+  margin-bottom: 10px;
+   font-weight: bold; 
+}
+
+.filters {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  /* padding-left: 100px; ❌ remove this */
+}
+
+.filter-tab {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+}
+
+.tags-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px 30px;
+  /* padding-left: 80px; ❌ remove this */
+}
+
+
+.tag {
+  padding: 8px 18px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #f2f2f2;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-section p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form-box {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.contact-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #123c88;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.contact-form button:hover {
+  background-color: #0b2e6d;
+}
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #1a1446; /* Dark Blue */
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+  gap: 40px 20px; /* more vertical gap, cleaner layout */
+  padding: 0 40px; /* ✅ add side padding to avoid overflow */
+  box-sizing: border-box;
+}
+
+
+.footer-column {
+  flex: 1 1 220px;         /* ✅ keeps columns responsive and wraps nicely */
+  max-width: 250px;        /* ✅ stops from expanding too much */
+  min-width: 180px;
+}
+
+
+.footer-column h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+/* ✅ Optional: Responsive for mobile view */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
