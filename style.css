@@ -212,7 +212,7 @@ body {
 .job-vacancies {
   padding: 30px 20px;
   background-color: #fff;
-  max-width: 1000px;
+  width: 1000px;
   
 }
 
@@ -328,69 +328,108 @@ body {
 }
 
 .footer {
-  background-color: #1a1446; /* Dark Blue */
-  color: #fff;
-  padding: 40px 20px;
+  background-color: #1a1240;
+  color: white;
+  padding: 40px 30px;
   font-family: Arial, sans-serif;
-  font-size: 13px;
 }
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 100%;
-  margin: auto;
-  gap: 40px 20px; /* more vertical gap, cleaner layout */
-  padding: 0 40px; /* ✅ add side padding to avoid overflow */
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
 .footer-column {
-  flex: 1 1 220px;         /* ✅ keeps columns responsive and wraps nicely */
-  max-width: 250px;        /* ✅ stops from expanding too much */
+  flex: 1 1 200px;
   min-width: 180px;
 }
 
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 👈 this will center heading & links */
+}
 
 .footer-column h3 {
-  font-size: 14px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #fff;
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
 }
 
 .footer-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center; /* 👈 this centers the link list */
 }
 
 .footer-column ul li a {
-  color: #ddd;
   text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  text-align: center;
 }
 
 .footer-column ul li a:hover {
-  text-decoration: underline;
+  color: white;
 }
 
-.footer-bottom {
+
+.brand-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand-column .logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.black-box {
+  background-color: white;
+}
+.social-icons {
+  margin-bottom: 30px;
   text-align: center;
-  color: #aaa;
-  font-size: 12px;
-  margin-top: 30px;
 }
 
-/* ✅ Optional: Responsive for mobile view */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29214a;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 0 6px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #444;
+}
+
+.social-icons a:hover {
+  background-color: #444;
 }

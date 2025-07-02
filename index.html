@@ -6,10 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigation Bar</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
   <style type="text/css">
     * {
@@ -79,6 +76,26 @@
       font-weight: bold;
       font-size: 15px;
     }
+
+    /* Extra for footer-bottom text */
+    .footer-bottom p {
+      font-size: 13px;
+      font-weight: 300;
+      color: white;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 20px;
+      margin: 0 10px;
+    }
   </style>
 </head>
 
@@ -110,157 +127,144 @@
   <div class="section-divider"></div>
   <div class="section-divider"></div>
 
-  <!-- White Section Start -->
-  <div class="white-section">
-    <!-- Yahan tumhara baaki ka page content aayega (optional) -->
-  </div>
+  <p style="text-align: center; color: white; margin-top: 10px;">Find Your Dream Job</p>
 
-  <!-- Removed image row section here -->
-
-  <p style="text-align: center; color: black; margin-top: 10px;">Find Your Dream Job</p>
-
- <section class="key-facts">
-  <h2>Our Key Facts</h2>
-  <div class="facts-container">
-    <div class="fact-item">
-      <div class="icon-circle">
-        <img src="EPP.jpg" alt="Customers">
+  <section class="key-facts">
+    <h2>Our Key Facts</h2>
+    <div class="facts-container">
+      <div class="fact-item">
+        <div class="icon-circle">
+          <img src="location.png" alt="Customers">
+        </div>
+        <p class="number">3,000+</p>
+        <p class="label">Customers</p>
       </div>
-      <p class="number">3,000+</p>
-      <p class="label">Customers</p>
-    </div>
-    <div class="fact-item">
-      <div class="icon-circle">
-         <img src="location-icon.png" alt="Locations"> 
-         <i class="ri-team-line icon"></i>
+      <div class="fact-item">
+        <div class="icon-circle">
+          <img src="location.png" alt="Locations">
+        </div>
+        <p class="number">30+</p>
+        <p class="label">Serviceable India locations</p>
       </div>
-      <p class="number">30+</p>
-      <p class="label">Serviceable Pan India locations</p>
-    </div>
-    <div class="fact-item">
-      <div class="icon-circle">
-        <img src="employee-icon.png" alt="Employees">
+      <div class="fact-item">
+        <div class="icon-circle">
+          <img src="location.png" alt="Employees">
+        </div>
+        <p class="number">450+</p>
+        <p class="label">Dedicated Employees</p>
       </div>
-      <p class="number">450+</p>
-      <p class="label">Dedicated Employees</p>
     </div>
-  </div>
-</section>
-<section class="popular-categories">
-  <h3>Popular Categories</h3>
-  <div class="category-list">
-    <span class="category">work from home</span>
-    <span class="category">Sales</span>
-    <span class="category">SQL</span>
-    <span class="category">HR</span>
-    <span class="category">IT</span>
+  </section>
 
-    <span class="category">event Management</span>
-    <span class="category">Oracle</span>
-    <span class="category">Banking</span>
-    <span class="category">Digital Marketing</span>
-    <span class="category">Graphic Design</span>
-  </div>
-</section>
+  <section class="popular-categories">
+    <h3>Popular Categories</h3>
+    <div class="category-list">
+      <span class="category">work from home</span>
+      <span class="category">Sales</span>
+      <span class="category">SQL</span>
+      <span class="category">HR</span>
+      <span class="category">IT</span>
+      <span class="category">event Management</span>
+      <span class="category">Oracle</span>
+      <span class="category">Banking</span>
+      <span class="category">Digital Marketing</span>
+      <span class="category">Graphic Design</span>
+    </div>
+  </section>
 
-<section class="job-vacancies">
-  <p class="title"><strong>Find job vacancies by</strong></p>
+  <section class="job-vacancies">
+    <p class="title"><strong>Find job vacancies by</strong></p>
+    <div class="filters">
+      <span class="filter-tab">Skill</span>
+      <span class="filter-tab">Location</span>
+      <span class="filter-tab">Company Industry</span>
+      <span class="filter-tab">Function Roles</span>
+    </div>
+    <div class="tags-grid">
+      <span class="tag">Python</span>
+      <span class="tag">Java</span>
+      <span class="tag">C/C++</span>
+      <span class="tag">Javascript</span>
+      <span class="tag">Sql</span>
+      <span class="tag">MongoDB</span>
+      <span class="tag">NumpyPandas</span>
+      <span class="tag">AWS/AZURE</span>
+    </div>
+  </section>
 
-  <div class="filters">
-    <span class="filter-tab">Skill</span>
-    <span class="filter-tab">Location</span>
-    <span class="filter-tab">Company Industry</span>
-    <span class="filter-tab">Function Roles</span>
-  </div>
+  <section class="contact-section">
+    <h2>Get In Touch</h2>
+    <p>Ready to discuss your project? Drop us a message and we'll get back to you within 24 hours.</p>
+    <div class="contact-form-box">
+      <form class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-  <div class="tags-grid">
-    <span class="tag">event Management</span>
-    <span class="tag">event Management</span>
-    <span class="tag">event Management</span>
-    <span class="tag">event Management</span>
-    <span class="tag">event Management</span>
-    <span class="tag">event Management</span>
-    <span class="tag">event Management</span>
-    <span class="tag">event Management</span>
-  </div>
-</section>
-
-<section class="contact-section">
-  <h2>Get In Touch</h2>
-  <p>Ready to discuss your project? Drop us a message and we'll get back to you within 24 hours.</p>
-
-  <div class="contact-form-box">
-    <form class="contact-form">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-column">
-      <h3>EmployoPlacify</h3>
-      <ul>
-        <li><a href="#">Question</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Chat</a></li>
-      </ul>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>EmployoPlacify</h3>
+        <ul>
+          <li><a href="#">Question</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Chat</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>PRODUCTS</h3>
+        <ul>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Talent</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>COMPANY</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work Here</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms Of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Cookie Setting</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>NETWORK</h3>
+        <ul>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Culture & Recreation</a></li>
+          <li><a href="#">Life & Arts</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Professional</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Data</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="footer-column">
-      <h3>PRODUCTS</h3>
-      <ul>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Advertising</a></li>
-        <li><a href="#">Talent</a></li>
-      </ul>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="ri-facebook-fill"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="ri-instagram-line"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="ri-linkedin-fill"></i></a>
     </div>
 
-    <div class="footer-column">
-      <h3>COMPANY</h3>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work Here</a></li>
-        <li><a href="#">Legal</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms Of Service</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Cookie Setting</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>Blog&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;Twitter&nbsp;&nbsp;&nbsp;LinkedIn</p>
+      <p>Site design / logo © 2025 EmployoPlacify. All rights reserved.</p>
     </div>
-
-    <div class="footer-column">
-      <h3>NETWORK</h3>
-      <ul>
-        <li><a href="#">Technology</a></li>
-        <li><a href="#">Culture & Recreation</a></li>
-        <li><a href="#">Life & Arts</a></li>
-        <li><a href="#">Science</a></li>
-        <li><a href="#">Professional</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">API</a></li>
-        <li><a href="#">Data</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>Blog&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;Twitter&nbsp;&nbsp;&nbsp;LinkedIn</p>
-    <p>Site design / logo © 2025 EmployoPlacify. All rights reserved.</p>
-  </div>
-</footer>
-
-
-
-
+  </footer>
 </body>
 
 </html>
